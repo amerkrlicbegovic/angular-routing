@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
-// Imports for loading & configuring the in-memory web api
+// Imports for loading & configuring the in-memory web
 var angular_in_memory_web_api_1 = require('angular-in-memory-web-api');
 var product_data_1 = require('./products/product-data');
 var app_component_1 = require('./app.component');
