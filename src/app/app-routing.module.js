@@ -22,7 +22,7 @@ var AppRoutingModule = (function () {
                     { path: 'welcome', component: welcome_component_1.WelcomeComponent },
                     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                     { path: '**', component: page_not_found_component_1.PageNotFoundComponent }
-                ])
+                ], { enableTracing: true })
             ],
             exports: [router_1.RouterModule]
         }), 
