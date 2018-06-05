@@ -11,7 +11,6 @@ import { ProductFilterPipe } from './product-filter.pipe';
 import { ProductService } from './product.service';
 import { ProductResolver } from './product-resolver.service';
 import { ProductEditGuard } from './product-guard.service';
-import { AuthGuard } from '../user/auth-guard.service';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -19,10 +18,6 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     SharedModule,
     RouterModule.forChild([
-      {
-        path: 'products',
-        canActivate: [ AuthGuard ],
-        children: [
           {
             path: '',
             component: ProductListComponent
@@ -43,8 +38,6 @@ import { SharedModule } from '../shared/shared.module';
               { path: 'tags', component: ProductEditTagsComponent }
             ]
           }
-        ]
-      }
     ])
   ],
   declarations: [
